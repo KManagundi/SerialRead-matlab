@@ -5,6 +5,8 @@ if ~isempty(instrfind)
 end
 clear all; 
 filename='C:\Users\kmana\Desktop\Matlab\MLX_Read.csv'; % filename here
+writeFileName='C:\Users\kmana\Desktop\Matlab\SensorData.csv'; % file to write to 
+% add method to write to file
   % if the file does not exists, read instrumentation
     delete(instrfindall);   %pre-emptively close all ports
     s1 = serial('COM8');    %define serial port to read the Arduino
